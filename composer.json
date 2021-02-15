@@ -1,0 +1,11 @@
+{
+    "require": {
+        "spipu/html2pdf": "^5.2",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ecommerce\\":"Ecommerce"
+        }
+    }
+}
