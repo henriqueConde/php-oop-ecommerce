@@ -6,7 +6,7 @@
 
 This project was developed with the intention of studying Object Oriented Programming with PHP, MySQL and to further develop the knowledge I've acquaride so far with PHP.  
 
-The idea of the project is to create a small ecommerce with PHP and MySQL with the following requirements.  
+The idea of the project was to create a small ecommerce with PHP and MySQL with the following requirements.  
   
 ## Requirements
 
@@ -53,9 +53,13 @@ Here is a diagram of this idea:
 
 ![MVC Architecture Draw](./assets/MVC.png)  
   
-## Code  
+## Code   
+
+So, the first thing I did after a basic wireframe of the pages was to draw the database tables, since that would be a crucial step to better understand how to approach the coding phase. Here is how the tables were structured:  
   
-To start with this plan I first had to create a router system. So to do it I edited the .htacess file to look for the controller and the action in the url:
+![MVC Architecture Draw](./assets/tables.png) 
+  
+Now, to start with the MVC planinng I first had to create a router system. So to do it I edited the .htacess file to look for the controller and the action in the url:
 
 ```RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2```
 
@@ -112,7 +116,7 @@ The code would first try to look for the category controller, if it existed it w
 ```
 Inside the category controller the index action would be triggered so that the user can access the categories page. Since this page is only allowed for admins the static method **isAdmin();**  checks if the user has permission to go forward. If he/she has a new instance of the category model will be created and with it the controller will be able to request data from the database. In this case, the **getCategories();** method will return all the categories available. With this information the view is required and will render the page for the final user and will be able to display all the categories.  
   
-This is the basic flow that I used througout the entire application. Always check first if controller and action are valid, then trigger the actio inside of the controller, request necessary data (or altering necessary data) by creating a new instance of the model and finally rendering the view with the right data. 
+This is the basic flow that I used througout the entire application. Always check first if controller and action are valid, then trigger the action inside of the controller, request necessary data (or altering necessary data) by creating a new instance of the model and finally rendering the view with the right data. 
 
 ## Lessons Learned  
 
