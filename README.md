@@ -1,11 +1,12 @@
-# Develop Your Project With PHP
+# Develop Your Project With PHP  
+  
+![homepage](./assets/home.png)
 
 ### Ecommerce With PHP  
 
-
 This project was developed with the intention of studying Object Oriented Programming with PHP, MySQL and to further develop the knowledge I've acquaride so far with PHP.  
 
-The idea of the project is to create a small ecommerce with PHP and MySQL with the following requirements.
+The idea of the project is to create a small ecommerce with PHP and MySQL with the following requirements.  
   
 ## Requirements
 
@@ -25,6 +26,17 @@ The idea of the project is to create a small ecommerce with PHP and MySQL with t
   - Payment Form
 - Search System
   - Search all products
+
+## Getting started  
+ 
+To be able to actually use the app, you need a local server up and running, which can be easily set up with XAMPP, all you need to do is follow those 3 steps:
+   
+  
+1) Head to https://www.apachefriends.org/index.html and click download. 
+
+2) Install XAMPP
+  
+3) Once it is installed, click on Start the Apache Server and MySQL Database.
 
  
 ## Process
@@ -115,4 +127,6 @@ This is the basic flow that I used througout the entire application. Always chec
 - How to avoid returning wrong data to javascript fetch
 - Usage of static methods 
   
-## Conclusion
+## Conclusion  
+  
+One of the most important takeaways of the project is the experience with the MVC, it really opened my mind for better ways of structuring your code, it can make the life of the developer much easier and make the development process faster.
